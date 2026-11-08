@@ -1,0 +1,1422 @@
+<!doctype html>
+<html lang="en" data-type="service" data-radius="soft" data-buttons="block" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alsyabella Saputra | Fullstack &amp; Applied AI Solutions Engineer</title>
+<meta name="description" content="Portfolio of Alsyabella Saputra, Gunadarma Computer Science graduate (3.93 GPA) specializing in Fullstack Engineering, RAG Knowledge Assistants, LLM integration (Gemini &amp; LangChain), and scalable enterprise backend services.">
+<meta name="author" content="Alsyabella Saputra">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://alsyabella.dev/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alsyabella.dev/">
+<meta property="og:title" content="Alsyabella Saputra | Fullstack &amp; Applied AI Solutions Engineer">
+<meta property="og:description" content="Portfolio of Alsyabella Saputra, Gunadarma Computer Science graduate (3.93 GPA) specializing in Fullstack Engineering, RAG Knowledge Assistants, LLM integration (Gemini &amp; LangChain), and scalable enterprise backend services.">
+<meta property="og:image" content="asset/profile.jpeg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://alsyabella.dev/">
+<meta name="twitter:title" content="Alsyabella Saputra | Fullstack &amp; Applied AI Solutions Engineer">
+<meta name="twitter:description" content="Portfolio of Alsyabella Saputra, Gunadarma Computer Science graduate (3.93 GPA) specializing in Fullstack Engineering, RAG Knowledge Assistants, LLM integration, and enterprise backend systems.">
+<meta name="twitter:image" content="asset/profile.jpeg">
+
+<link rel="icon" href="asset/profile.jpeg" type="image/jpeg">
+<meta name="theme-color" content="#0b0f19">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+
+<!-- Schema.org Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Alsyabella Saputra",
+  "jobTitle": "Fullstack and AI Solutions Engineer",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universitas Gunadarma",
+    "department": "Fakultas Teknologi Industri, Informatika"
+  },
+  "knowsAbout": [
+    "Fullstack Development",
+    "Artificial Intelligence",
+    "Large Language Models (LLM)",
+    "Retrieval-Augmented Generation (RAG)",
+    "FastAPI",
+    "LangChain",
+    "Frappe Framework",
+    "Docker",
+    "PostgreSQL",
+    "Vector Databases",
+    "Python",
+    "RDKit"
+  ],
+  "sameAs": [
+    "https://github.com/abel1494",
+    "https://www.linkedin.com/in/alsyabella/"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+
+<style>
+:root {
+  --p-bg: #0b0f19;
+  --p-surface: #131b2e;
+  --p-ink: #f8fafc;
+  --p-muted: #94a3b8;
+  --p-accent: #ff2d75;
+  --p-accent-ink: #0b0f19;
+  --p-action: #ff2d75;
+  --p-action-ink: #ffffff;
+  --p-inv-bg: #f8fafc;
+  --p-inv-surface: #e5e7ea;
+  --p-inv-ink: #0b0f19;
+  --p-inv-muted: #595d66;
+  --p-inv-accent: #ff2d75;
+  --p-inv-accent-ink: #0b0f19;
+  --p-inv-action: #ff2d75;
+  --p-inv-action-ink: #0b0f19;
+  --font-display: "Manrope", system-ui, sans-serif;
+  --font-text: "Manrope", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --display-weight: 700;
+  --display-tracking: -0.035em;
+  --display-tracking-xl: -0.045em;
+  --ly-scale: 0.97;
+}
+
+/* ── Base Canvas ── */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+
+body {
+  background-color: var(--p-bg);
+  background-image:
+    radial-gradient(ellipse 70% 50% at 90% 0%, rgba(255, 45, 117, 0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 40% at 5% 90%, rgba(255, 45, 117, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(100, 20, 60, 0.04) 0%, transparent 70%);
+  background-attachment: fixed;
+  color: var(--p-ink);
+}
+
+/* ── 2. Forced Normal Vertical Flow for all Sections (No Overlap/Collapse) ── */
+main > section,
+section.section,
+#projects,
+#skills,
+#experience,
+#credentials {
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+main > section > .wrap,
+section.section > .wrap {
+  position: relative !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+
+/* ── 1. Fix Navbar Overlap pada Hero ── */
+main#overview {
+  padding-top: 100px;
+}
+@media (max-width: 768px) {
+  main#overview {
+    padding-top: 80px;
+  }
+}
+
+/* ── Floating Pill Navbar ── */
+.nav-floating-wrap {
+  position: fixed;
+  top: 18px;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  pointer-events: none;
+}
+.nav-pill {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1080px;
+  padding: 10px 18px 10px 24px;
+  background: rgba(11, 15, 25, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 45, 117, 0.3);
+  border-radius: 9999px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 45, 117, 0.08);
+}
+.nav-pill__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: 700 16px/1 var(--font-display);
+  color: var(--p-ink);
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  flex: none;
+}
+.nav-pill__logo .sakura-mark {
+  color: #ff2d75;
+  font-size: 15px;
+  text-shadow: 0 0 10px rgba(255, 45, 117, 0.6);
+}
+.nav-pill__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-pill__link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.nav-pill__link:hover {
+  color: #ffa8ca;
+}
+.nav-pill__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff2d75;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 9px 20px;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 0 16px rgba(255, 45, 117, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  flex: none;
+}
+.nav-pill__cta:hover {
+  background: #ff4785;
+  box-shadow: 0 0 24px rgba(255, 45, 117, 0.6);
+  transform: translateY(-1px);
+}
+
+/* ── Sakura Badge ── */
+.badge-sakura {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffb3cc;
+  background: linear-gradient(135deg, rgba(255,45,117,0.14), rgba(255,45,117,0.06));
+  border: 1px solid rgba(255, 45, 117, 0.4);
+  border-radius: var(--r-pill);
+  padding: 5px 14px;
+  box-shadow: 0 0 12px rgba(255, 45, 117, 0.15), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.badge-sakura::before {
+  content: "🌸";
+  font-size: 12px;
+}
+
+/* ── Hero Portrait (Aspect 4:5) ── */
+.img-aspect-hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 45, 117, 0.3);
+  background: #131b2e;
+  box-shadow:
+    0 0 0 1px rgba(255,45,117,0.08),
+    0 12px 48px rgba(0, 0, 0, 0.6),
+    0 0 60px rgba(255, 45, 117, 0.1);
+}
+.img-aspect-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.img-aspect-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(11,15,25,0.7) 0%, transparent 40%);
+}
+
+/* ── Hero Stat Row ── */
+.hero-stat-row {
+  display: flex;
+  gap: 28px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.hero-stat__val {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff2d75;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(255,45,117,0.4);
+}
+.hero-stat__label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--p-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Browser Mockup Window (Anti-stretch / aspect 16:9) ── */
+.browser-window {
+  display: flex;
+  flex-direction: column;
+  background: #131b2e;
+  border: 1px solid rgba(255, 45, 117, 0.22);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.browser-window:hover {
+  border-color: rgba(255, 45, 117, 0.55);
+  box-shadow: 0 8px 30px rgba(255, 45, 117, 0.25), 0 12px 40px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px);
+}
+.browser-window__bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(11, 15, 25, 0.85);
+  border-bottom: 1px solid rgba(255, 45, 117, 0.12);
+}
+.browser-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.browser-dot--red { background: #ff5f56; }
+.browser-dot--yellow { background: #ffbd2e; }
+.browser-dot--green { background: #27c93f; }
+.browser-window__url {
+  flex: 1;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #94a3b8;
+  background: rgba(19, 27, 46, 0.6);
+  padding: 2px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 45, 117, 0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.browser-window__canvas {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 380px;
+  background: #0d1424;
+  overflow: hidden;
+}
+.browser-window__canvas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.browser-window:hover .browser-window__canvas img {
+  transform: scale(1.02);
+}
+
+/* ── Project Showcase Item (Stacked Rows) ── */
+.project-showcase-list {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  margin-top: 36px;
+}
+.project-showcase-card {
+  padding: 32px;
+  background: rgba(19, 27, 46, 0.65);
+  border: 1px solid rgba(255, 45, 117, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.25s ease;
+}
+.project-showcase-card:hover {
+  border-color: rgba(255, 45, 117, 0.35);
+}
+
+/* ── 2. Fix Project Showcase Grid Responsif (Mandiri, Tanpa .grid Bawaan) ── */
+.project-split-layout {
+  display: grid !important;
+  grid-template-columns: 1fr 1.15fr !important;
+  gap: 36px !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+@media (max-width: 991px) {
+  .project-split-layout {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+/* ── Live Demo Button ── */
+.btn-live-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff2d75;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 10px 22px;
+  border-radius: var(--r-btn);
+  text-decoration: none;
+  box-shadow: 0 0 16px rgba(255, 45, 117, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  width: fit-content;
+  margin-top: 20px;
+}
+.btn-live-demo:hover {
+  background: #ff4785;
+  box-shadow: 0 0 24px rgba(255, 45, 117, 0.6);
+  transform: translateY(-1px);
+}
+
+/* ── Tech Tags ── */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(255, 45, 117, 0.08);
+  border: 1px solid rgba(255, 45, 117, 0.22);
+  color: #ffa8ca;
+}
+.tech-tag::before {
+  content: "//";
+  color: rgba(255,45,117,0.5);
+  font-size: 10px;
+}
+
+/* ── Work Experience Card ── */
+.exp-card {
+  background: #131b2e;
+  border: 1px solid rgba(255, 45, 117, 0.25);
+  border-radius: 18px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+.exp-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #ff2d75, rgba(255, 45, 117, 0.2));
+}
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 45, 117, 0.12);
+  margin-bottom: 20px;
+}
+.exp-role {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 4px 0;
+}
+.exp-company {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff2d75;
+}
+.exp-date {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #ffa8ca;
+  background: rgba(255, 45, 117, 0.08);
+  border: 1px solid rgba(255, 45, 117, 0.2);
+  border-radius: var(--r-pill);
+  padding: 5px 14px;
+}
+.exp-points {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.exp-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+.exp-point::before {
+  content: "▹";
+  color: #ff2d75;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  flex: none;
+}
+
+/* ── Section Header Center ── */
+.section-head--center {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto var(--s-7) auto;
+}
+.section-head--center .badge-sakura {
+  margin-bottom: 12px;
+}
+.section-head--center h2 {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: -0.03em;
+  margin: 8px 0;
+}
+.section-head--center p {
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ── 3-Column Certificate Cards Grid ── */
+.cert-grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 1023px) {
+  .cert-grid-3col { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 639px) {
+  .cert-grid-3col { grid-template-columns: 1fr; }
+}
+
+.cert-card-cyber {
+  background: #131b2e;
+  border: 1px solid rgba(255, 45, 117, 0.2);
+  border-radius: 14px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.cert-card-cyber::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff2d75, transparent);
+  opacity: 0.6;
+}
+.cert-card-cyber:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 45, 117, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 45, 117, 0.15);
+}
+.cert-card-cyber h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #f8fafc;
+  margin: 0;
+}
+.cert-card-cyber__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #ffa8ca;
+  background: rgba(255, 45, 117, 0.08);
+  border: 1px solid rgba(255, 45, 117, 0.2);
+  border-radius: 9999px;
+  padding: 4px 10px;
+  width: fit-content;
+}
+.cert-card-cyber__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 45, 117, 0.12);
+  margin-top: auto;
+}
+.cert-card-cyber__link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ff2d75;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+.cert-card-cyber__link:hover {
+  color: #ffa8ca;
+  gap: 7px;
+}
+
+/* ── Interactive Tech Stack Grid (Categorized) ── */
+.skill-category-block {
+  background: rgba(19, 27, 46, 0.7);
+  border: 1px solid rgba(255, 45, 117, 0.2);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.skill-category-block:hover {
+  border-color: rgba(255, 45, 117, 0.45);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 16px rgba(255, 45, 117, 0.1);
+}
+.skill-category-block__title {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffa8ca;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.skill-category-block__title::before {
+  content: "⚡";
+  font-size: 12px;
+}
+.skill-badges-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #0d1424;
+  border: 1px solid rgba(255, 45, 117, 0.2);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f8fafc;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.skill-badge:hover {
+  transform: translateY(-2px);
+  border-color: #ff2d75;
+}
+
+/* ── 3. Fix Section Tech Stack Grid Bentrok (Mandiri) ── */
+.skills-matrix {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 20px !important;
+  margin-top: 32px !important;
+  width: 100% !important;
+}
+@media (max-width: 768px) {
+  .skills-matrix {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Education Highlight Banner ── */
+.edu-highlight-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, rgba(19, 27, 46, 0.9) 0%, rgba(13, 20, 36, 0.95) 100%);
+  border: 1px solid rgba(255, 45, 117, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 45, 117, 0.08);
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+.edu-highlight-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ff2d75;
+}
+.edu-highlight__main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.edu-highlight__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffa8ca;
+  background: rgba(255, 45, 117, 0.1);
+  border: 1px solid rgba(255, 45, 117, 0.24);
+  border-radius: 9999px;
+  padding: 3px 10px;
+  width: fit-content;
+}
+.edu-highlight__title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0;
+}
+.edu-highlight__subtitle {
+  font-size: 14px;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+.edu-highlight__metrics {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: none;
+}
+.edu-metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+.edu-metric-val {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ff2d75;
+  font-family: var(--font-mono);
+  line-height: 1;
+}
+.edu-metric-label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+@media (max-width: 768px) {
+  .edu-highlight-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 16px;
+  }
+  .edu-highlight__metrics {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 45, 117, 0.12);
+  }
+  .edu-metric-item {
+    align-items: flex-start;
+  }
+}
+
+/* ── 3. Clean Section Credentials Isolation ── */
+#credentials {
+  margin-top: 60px !important;
+  position: relative !important;
+  clear: both !important;
+}
+
+/* ── 4. Fix Footer Closing Callout Full-Width Banner ── */
+.closing__cta {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 48px 32px !important;
+  background: linear-gradient(135deg, rgba(19, 27, 46, 0.85) 0%, rgba(11, 15, 25, 0.95) 100%) !important;
+  border: 1px solid rgba(255, 45, 117, 0.25) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 45, 117, 0.1) !important;
+  gap: 20px !important;
+}
+.closing__cta .section-head--split {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  max-width: 680px !important;
+  margin: 0 auto !important;
+  gap: 12px !important;
+}
+.closing__cta h2 {
+  font-size: clamp(32px, 4vw, 44px) !important;
+  font-weight: 800 !important;
+  color: #f8fafc !important;
+  margin: 0 !important;
+}
+.closing__cta p.t-lead {
+  font-size: 16px !important;
+  color: #94a3b8 !important;
+  margin: 0 !important;
+  line-height: 1.6 !important;
+}
+.closing__cta .btn--primary {
+  margin-top: 12px !important;
+  font-size: 15px !important;
+  padding: 14px 32px !important;
+  box-shadow: 0 0 24px rgba(255, 45, 117, 0.5) !important;
+}
+
+/* ── Mobile adjustments ── */
+@media (max-width: 768px) {
+  .nav-pill {
+    padding: 8px 14px;
+    gap: 12px;
+  }
+  .nav-pill__links {
+    display: none;
+  }
+  .hero-stat-row {
+    gap: 16px;
+  }
+  .project-showcase-card {
+    padding: 20px;
+  }
+  .exp-card {
+    padding: 22px 18px;
+  }
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+</head>
+
+<body>
+
+<!-- ── FLOATING PILL NAVBAR ── -->
+<div class="nav-floating-wrap">
+  <nav class="nav-pill" aria-label="Main navigation">
+    <a class="nav-pill__logo" href="#overview">
+      <span class="sakura-mark">🌸</span>
+      <span>Alsyabella</span>
+    </a>
+    <div class="nav-pill__links">
+      <a class="nav-pill__link" href="#projects">Projects</a>
+      <a class="nav-pill__link" href="#experience">Experience</a>
+      <a class="nav-pill__link" href="#skills">Tech Stack</a>
+      <a class="nav-pill__link" href="#credentials">Education &amp; Certificates</a>
+      <a class="nav-pill__link" href="#contact">Contact</a>
+    </div>
+    <a class="nav-pill__cta" href="asset/CV.pdf" download="Alsyabella_Saputra_CV.pdf">
+      Download CV
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    </a>
+  </nav>
+</div>
+
+<main id="overview">
+  <!-- ── SECTION 1: HERO ── -->
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="hero-text grid hero__grid">
+        <div class="hero__text span-5">
+          <p class="hero__kicker"><span class="badge-sakura">Fullstack and AI Engineer</span></p>
+          <h1 id="hero-h">Architecting Scalable Backend &amp; Applied AI Systems</h1>
+          <p class="hero__lead">Gunadarma CS graduate (3.93 GPA) bridging enterprise-grade backend reliability with autonomous LLM agents, production RAG pipelines, and high-performance vector databases.</p>
+          <div class="hero-stat-row">
+            <div class="hero-stat">
+              <span class="hero-stat__val">3.93</span>
+              <span class="hero-stat__label">GPA / 4.00</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat__val">3</span>
+              <span class="hero-stat__label">Featured AI Systems</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat__val">9</span>
+              <span class="hero-stat__label">Certifications</span>
+            </div>
+          </div>
+          <div class="btn-row" style="margin-top:28px;">
+            <a class="btn btn--primary" href="asset/CV.pdf" download="Alsyabella_Saputra_CV.pdf">Download CV</a>
+            <a class="btn btn--secondary" href="#projects">Explore Projects</a>
+          </div>
+        </div>
+        <div class="span-6 start-7">
+          <!-- GANTI: Gambar Portrait Hero, rasio 4:5 vertikal -->
+          <div class="img-aspect-hero">
+            <img src="asset/profile.jpeg" alt="Alsyabella Saputra professional portrait - Fullstack and AI Solutions Engineer" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 2: WORK EXPERIENCE (ANTERAJA) ── -->
+  <section class="section" id="experience" aria-labelledby="experience-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="t-label muted">CAREER MILESTONE</p>
+        <h2 id="experience-h">Work Experience. <span class="muted">Production backend delivery.</span></h2>
+        <p class="t-lead">Proven track record developing enterprise backend services, data automations, and driver mobile APIs.</p>
+      </div>
+
+      <div class="exp-card" style="margin-top:28px;">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-role">IT Developer - Backend Developer</h3>
+            <span class="exp-company">Anteraja (PT Tri Adi Bersama)</span>
+          </div>
+          <span class="exp-date">Juli &ndash; November 2026</span>
+        </div>
+        <ul class="exp-points">
+          <li class="exp-point">
+            Mengembangkan otomasi alur data Zone Area lintas modul penagihan (Job Order, Billing Staging, Sales Invoice) berbasis Frappe Framework &amp; Python.
+          </li>
+          <li class="exp-point">
+            Merancang konfigurasi dinamis master Customer &amp; API backend validasi QR Code task pada mobile driver saat proses muat-bongkar logistik.
+          </li>
+          <li class="exp-point">
+            Membangun filter dinamis multi-parameter untuk tim Finance guna memfilter dan memproses ribuan data staging transaksi secara efisien.
+          </li>
+          <li class="exp-point">
+            Menangani modul RFM, validasi safe-check skema database (get_meta()), dan manajemen rilis branch Git (merge clean, CI/CD, PEP8 Flake8).
+          </li>
+        </ul>
+        <div class="tech-tags" style="margin-top:24px;">
+          <span class="tech-tag">Frappe Framework</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">MariaDB / PostgreSQL</span>
+          <span class="tech-tag">REST APIs</span>
+          <span class="tech-tag">Git CI/CD</span>
+          <span class="tech-tag">Flake8 PEP8</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 3: FEATURED SOFTWARE PROJECTS (CLEAN SINGLE SECTION) ── -->
+  <section class="section" id="projects" aria-labelledby="projects-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="t-label muted">PORTFOLIO SHOWCASE</p>
+        <h2 id="projects-h">Featured Software Projects. <span class="muted">End-to-end applied AI and systems.</span></h2>
+        <p class="t-lead">Architecting intelligent agent workflows, natural language processing pipelines, and vector knowledge engines.</p>
+      </div>
+
+      <div class="project-showcase-list">
+        <!-- Project 1: Novel Chemicals Discovery Agent -->
+        <div class="project-showcase-card">
+          <div class="project-split-layout">
+            <div>
+              <p class="t-label muted">ACCENTURE CAPSTONE</p>
+              <h3 style="font-size:24px;font-weight:800;color:#f8fafc;margin:6px 0 12px 0;">Novel Chemicals Discovery Agent</h3>
+              <p class="t-small" style="line-height:1.6;color:#cbd5e1;">Agen otonom cerdas untuk akselerasi penemuan senyawa kimia baru. Mengintegrasikan penalaran LLM via Google Gemini API &amp; LangChain dengan algoritma komputasi kimia RDKit untuk mengeksekusi sintesis molekuler, validasi stereokimiawi, dan prediksi struktur senyawa siap uji secara instan.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">Gemini API</span>
+                <span class="tech-tag">RDKit</span>
+                <span class="tech-tag">FastAPI</span>
+              </div>
+              <a class="btn-live-demo" href="https://chemic-ai.vercel.app/" target="_blank" rel="noopener">
+                Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+            <div>
+              <!-- GANTI: Mockup Window Project 1, rasio 16:9 landscape -->
+              <div class="browser-window">
+                <div class="browser-window__bar">
+                  <div class="browser-dots">
+                    <span class="browser-dot browser-dot--red"></span>
+                    <span class="browser-dot browser-dot--yellow"></span>
+                    <span class="browser-dot browser-dot--green"></span>
+                  </div>
+                  <div class="browser-window__url">https://chemic-ai.vercel.app/</div>
+                </div>
+                <div class="browser-window__canvas">
+                  <img src="asset/project-chemicals-thumb.png" alt="Novel Chemicals Discovery Agent interface - Autonomous molecular discovery powered by Gemini API, LangChain, and RDKit" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: AI vs. Human Text Detection (AIdetect) -->
+        <div class="project-showcase-card">
+          <div class="project-split-layout">
+            <div>
+              <p class="t-label muted">SCIENTIFIC RESEARCH PROJECT</p>
+              <h3 style="font-size:24px;font-weight:800;color:#f8fafc;margin:6px 0 12px 0;">AI vs. Human Text Detection (AIdetect)</h3>
+              <p class="t-small" style="line-height:1.6;color:#cbd5e1;">Sistem klasifikasi teks NLP berbasis Deep Learning end-to-end yang membedakan teks buatan mesin vs tulisan manusia. Dilengkapi pipeline preprocessing otomatis, ekstraksi fitur linguistik, dan estimasi probabilitas real-time dengan deployment publik mandiri pada Hugging Face Spaces.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Hugging Face Spaces</span>
+              </div>
+              <a class="btn-live-demo" href="https://aidetectoralsyabella.streamlit.app/" target="_blank" rel="noopener">
+                Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+            <div>
+              <!-- GANTI: Mockup Window Project 2, rasio 16:9 landscape -->
+              <div class="browser-window">
+                <div class="browser-window__bar">
+                  <div class="browser-dots">
+                    <span class="browser-dot browser-dot--red"></span>
+                    <span class="browser-dot browser-dot--yellow"></span>
+                    <span class="browser-dot browser-dot--green"></span>
+                  </div>
+                  <div class="browser-window__url">https://aidetectoralsyabella.streamlit.app/</div>
+                </div>
+                <div class="browser-window__canvas">
+                  <img src="asset/project-aidetect-thumb.png" alt="AIdetect web interface - Deep Learning NLP text classifier for AI vs Human text detection on Streamlit" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Academic Knowledge Assistant (RAG System) -->
+        <div class="project-showcase-card">
+          <div class="project-split-layout">
+            <div>
+              <p class="t-label muted">THESIS RESEARCH PROJECT</p>
+              <h3 style="font-size:24px;font-weight:800;color:#f8fafc;margin:6px 0 12px 0;">Academic Knowledge Assistant (RAG System)</h3>
+              <p class="t-small" style="line-height:1.6;color:#cbd5e1;">Platform asisten riset akademik berbasis Retrieval-Augmented Generation (RAG). Membangun pipeline embedding dinamis ke basis data vektor (pgvector/ChromaDB) dan orkestrasi LLM untuk menyintesis jawaban dokumen ilmiah yang akurat, bersitasi ketat, dan bebas dari halusinasi model.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">RAG</span>
+                <span class="tech-tag">pgvector / Vector DB</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">LangChain</span>
+              </div>
+              <a class="btn-live-demo" href="https://rag-academic-assistent.vercel.app/" target="_blank" rel="noopener">
+                Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+            <div>
+              <!-- GANTI: Mockup Window Project 3, rasio 16:9 landscape -->
+              <div class="browser-window">
+                <div class="browser-window__bar">
+                  <div class="browser-dots">
+                    <span class="browser-dot browser-dot--red"></span>
+                    <span class="browser-dot browser-dot--yellow"></span>
+                    <span class="browser-dot browser-dot--green"></span>
+                  </div>
+                  <div class="browser-window__url">https://rag-academic-assistent.vercel.app/</div>
+                </div>
+                <div class="browser-window__canvas">
+                  <img src="asset/project-rag-thumb.png" alt="Academic Knowledge Assistant RAG dashboard - Vector database retrieval and context synthesis" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 4: SKILLS & TECH STACK (ALIGNED WITH CV) ── -->
+  <section class="section" id="skills" aria-labelledby="skills-h">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="t-label muted">TECHNICAL ARSENAL</p>
+        <h2 id="skills-h">Skills and Tech Stack. <span class="muted">Battle-tested tools and frameworks.</span></h2>
+        <p class="t-lead">Comprehensive technical competencies developed through enterprise internship, capstone project, and thesis research.</p>
+      </div>
+
+      <div class="skills-matrix">
+        <!-- Core & Frameworks -->
+        <div>
+          <div class="skill-category-block">
+            <h3 class="skill-category-block__title">Core &amp; Frameworks</h3>
+            <div class="skill-badges-flow">
+              <span class="skill-badge"><img src="assets/icons/python.svg" alt="" width="18" height="18"> Python</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">⚡</span> Frappe Framework</span>
+              <span class="skill-badge"><img src="assets/icons/fastapi.svg" alt="" width="18" height="18"> FastAPI</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">⚡</span> Streamlit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Databases -->
+        <div>
+          <div class="skill-category-block">
+            <h3 class="skill-category-block__title">Backend &amp; Databases</h3>
+            <div class="skill-badges-flow">
+              <span class="skill-badge"><span style="color:#ff2d75;">🌐</span> RESTful API</span>
+              <span class="skill-badge"><img src="assets/icons/postgres.svg" alt="" width="18" height="18"> PostgreSQL</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">🔍</span> Vector DB (pgvector / ChromaDB)</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">💾</span> SQL</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">🛠️</span> DBeaver</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI & Data -->
+        <div>
+          <div class="skill-category-block">
+            <h3 class="skill-category-block__title">AI &amp; Data</h3>
+            <div class="skill-badges-flow">
+              <span class="skill-badge"><span style="color:#ff2d75;">🦜</span> LangChain</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">🤖</span> LLM Integration</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">📚</span> RAG Architecture</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">🧠</span> NLP</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">📊</span> Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DevOps & Tools -->
+        <div>
+          <div class="skill-category-block">
+            <h3 class="skill-category-block__title">DevOps &amp; Tools</h3>
+            <div class="skill-badges-flow">
+              <span class="skill-badge"><img src="assets/icons/docker.svg" alt="" width="18" height="18"> Docker</span>
+              <span class="skill-badge"><img class="ic-ink" src="assets/icons/git.svg" alt="" width="18" height="18"> Git &amp; GitHub</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">🐧</span> Linux</span>
+              <span class="skill-badge"><span style="color:#ff2d75;">🔄</span> CI/CD</span>
+              <span class="skill-badge"><img src="assets/icons/huggingface.svg" alt="" width="18" height="16"> Hugging Face Deployment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SECTION 5: CERTIFICATES & EDUCATION ── -->
+  <section class="section" id="credentials" aria-labelledby="credentials-h">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom: 28px;">
+        <p class="hero__kicker"><span class="badge-sakura">VERIFIED CREDENTIALS</span></p>
+        <h2 id="credentials-h">🌸 Certificates &amp; Education 🌸</h2>
+        <p class="t-lead">Universitas Gunadarma Computer Science graduate with 3.93 GPA. Accredited technical certifications spanning machine learning, deep learning, and software delivery.</p>
+      </div>
+
+      <!-- Education Highlight Card (Gunadarma) -->
+      <div class="edu-highlight-card">
+        <div class="edu-highlight__main">
+          <span class="edu-highlight__badge">ALMA MATER</span>
+          <h3 class="edu-highlight__title">Universitas Gunadarma</h3>
+          <p class="edu-highlight__subtitle">Fakultas Teknologi Industri &bull; S1 Informatika (2022 &ndash; Sekarang)<br>Member of Google Developer Student Clubs (GDSC) Gunadarma Chapter</p>
+        </div>
+        <div class="edu-highlight__metrics">
+          <div class="edu-metric-item">
+            <span class="edu-metric-val">3.93</span>
+            <span class="edu-metric-label">GPA / 4.00</span>
+          </div>
+          <div class="edu-metric-item">
+            <span class="edu-metric-val">GDSC</span>
+            <span class="edu-metric-label">Core Member</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-grid-3col">
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Dicoding &bull; Des 2025 – Des 2028</span>
+            <h3 style="margin-top:10px;">Membangun Sistem Machine Learning</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">ML Pipeline &bull; Production</span>
+            <a class="cert-card-cyber__link" href="https://www.dicoding.com/certificates/L4PQ2LDEOZO1" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Intelligo ID &bull; Okt 2025</span>
+            <h3 style="margin-top:10px;">Trial Bootcamp Data Science &amp; AI</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">AI &bull; Data Science</span>
+            <a class="cert-card-cyber__link" href="asset/cert-intelligo.png" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Dicoding &bull; Okt 2025 – Okt 2028</span>
+            <h3 style="margin-top:10px;">Belajar Fundamental Deep Learning</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">Neural Networks &bull; PyTorch</span>
+            <a class="cert-card-cyber__link" href="https://www.dicoding.com/certificates/QLZ963N2MZ5D" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Dicoding &bull; Sep 2025 – Sep 2028</span>
+            <h3 style="margin-top:10px;">Belajar Machine Learning untuk Pemula</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">Scikit-learn &bull; Supervised</span>
+            <a class="cert-card-cyber__link" href="https://www.dicoding.com/certificates/KEXL2LJ8WZG2" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Dicoding &bull; Agu 2025 – Agu 2028</span>
+            <h3 style="margin-top:10px;">Memulai Pemrograman dengan Python</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">Python 3 &bull; Core Syntax</span>
+            <a class="cert-card-cyber__link" href="https://www.dicoding.com/certificates/N9ZO2EGDRPG5" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Dicoding &bull; Agu 2025 – Agu 2028</span>
+            <h3 style="margin-top:10px;">Belajar Dasar AI</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">AI Concepts &bull; GenAI</span>
+            <a class="cert-card-cyber__link" href="https://www.dicoding.com/certificates/2VX3527R3PYQ" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Dicoding &bull; Agu 2025 – Agu 2028</span>
+            <h3 style="margin-top:10px;">Belajar Dasar Git dengan GitHub</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">VCS &bull; Collaboration</span>
+            <a class="cert-card-cyber__link" href="https://www.dicoding.com/certificates/MEPJ2L9OWP3V" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Dicoding &bull; Agu 2025 – Agu 2028</span>
+            <h3 style="margin-top:10px;">Pengenalan ke Logika Pemrograman (Programming Logic 101)</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">Logic 101 &bull; Algorithms</span>
+            <a class="cert-card-cyber__link" href="https://www.dicoding.com/certificates/ERZR24YYQPYV" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="cert-card-cyber">
+          <div>
+            <span class="cert-card-cyber__meta">Dicoding &bull; Agu 2025 – Agu 2028</span>
+            <h3 style="margin-top:10px;">Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+          </div>
+          <div class="cert-card-cyber__footer">
+            <span style="font-size:11px;color:#94a3b8;font-family:var(--font-mono);">SDLC &bull; Best Practices</span>
+            <a class="cert-card-cyber__link" href="https://www.dicoding.com/certificates/6RPNG8498Z2M" target="_blank" rel="noopener">
+              View Credential
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ── SECTION 6: FOOTER CLOSING ── -->
+<footer class="footer closing footer--dark ground-inverse" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta">
+      <div class="section-head--split">
+        <div>
+          <h2 id="close-h">Download CV</h2>
+          <p class="t-lead">Available for associate software engineering, fullstack development, and applied AI positions.</p>
+        </div>
+        <a class="btn btn--primary" href="asset/CV.pdf" download="Alsyabella_Saputra_CV.pdf">
+          Download CV
+          <svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav-pill__logo" href="#overview" style="font-size:18px;">
+            <span class="sakura-mark">🌸</span>
+            <span>Alsyabella Saputra</span>
+          </a>
+          <p class="footer__lede">Fullstack and AI Solutions Engineer building reliable machine learning systems.</p>
+        </div>
+        <div class="span-2 footer__col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#overview">Top</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+          </ul>
+        </div>
+        <div class="span-2 footer__col">
+          <h3>Credentials</h3>
+          <ul>
+            <li><a href="#skills">Engineering Stack</a></li>
+            <li><a href="#credentials">Certifications</a></li>
+            <li><a href="asset/CV.pdf" download="Alsyabella_Saputra_CV.pdf">Curriculum Vitae</a></li>
+          </ul>
+        </div>
+        <div class="span-4 footer__col">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/alsyabella/" target="_blank" rel="noopener">LinkedIn: alsyabella</a></li>
+            <li><a href="https://github.com/abel1494" target="_blank" rel="noopener">GitHub: abel1494</a></li>
+            <li><a href="mailto:alsyaabellaaa@gmail.com">Direct Message (alsyaabellaaa@gmail.com)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 Alsyabella Saputra. All technical documentation verified.</span>
+        <div class="socials">
+          <a href="https://github.com/abel1494" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <img class="ic ic-40 ic-ink" src="assets/icons/github.svg" alt="GitHub" width="20" height="20">
+          </a>
+          <a href="https://www.linkedin.com/in/alsyabella/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <img class="ic ic-40" src="assets/icons/linkedin.svg" alt="LinkedIn" width="20" height="20">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+</body>
+</html>
